@@ -1,5 +1,5 @@
 format = """
-[](#9A348E)\
+[╭─ ](#9A348E)\
 $os\
 $username\
 [](bg:#DA627D fg:#9A348E)\
@@ -25,6 +25,12 @@ ${custom.interface}$docker_context\
 [](fg:#06969A bg:#33658A)\
 $time\
 [ ](fg:#33658A)\
+$line_break\
+[╰─ ](#9A348E)\
+"""
+
+right_format = """
+$cmd_duration\
 """
 
 # Disable the blank line at the start of the prompt

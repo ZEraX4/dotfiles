@@ -3,6 +3,7 @@ return {
   {
     "sphamba/smear-cursor.nvim",
     opts = {},
+    enabled = not vim.g.neovide,
   },
 
   -- Smooth scrolling.

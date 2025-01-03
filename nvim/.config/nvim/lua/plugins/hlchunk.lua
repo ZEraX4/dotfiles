@@ -8,12 +8,23 @@ return {
       },
       indent = {
         enable = true,
+        chars = {
+          "․",
+          "⁚",
+          "⁖",
+          "⁘",
+          "⁙",
+        },
+        style = {
+          "#806d9c",
+          "#c06f98",
+        },
+      },
+      line_num = {
+        enable = true,
       },
       blank = {
-        enable = true,
-        chars = {
-          " ",
-        },
+        enable = false,
         style = {
           { bg = "#434437" },
           { bg = "#2f4440" },

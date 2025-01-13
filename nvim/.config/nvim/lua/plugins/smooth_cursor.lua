@@ -9,6 +9,7 @@ return {
   -- Smooth scrolling.
   {
     "karb94/neoscroll.nvim",
+    enabled = not vim.g.neovide,
     config = function()
       require("neoscroll").setup({})
     end,

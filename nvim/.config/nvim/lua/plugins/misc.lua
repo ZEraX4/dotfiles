@@ -1,5 +1,8 @@
 return {
   {
+    "ThePrimeagen/vim-be-good",
+  },
+  {
     "akinsho/toggleterm.nvim",
     lazy = true,
     cmd = { "ToggleTerm", "TermExec" },

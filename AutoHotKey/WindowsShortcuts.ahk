@@ -14,6 +14,28 @@ F12:: {
     }
 }
 
+^+/:: ; Ctrl+Shift+/ shortcut
+{
+    ; Release Ctrl and Shift programmatically
+    Send "{Ctrl up}{Shift up}"
+    
+    ; Send the space key 15 times
+    Loop 50
+    {
+        Send "{Space}"
+		Send "{Down}"
+    }
+    
+    ; Send Shift+F4
+    Send "+{F4}"
+    
+    ; Restore Ctrl and Shift if they were physically pressed
+    if GetKeyState("Ctrl", "P") ; Check if Ctrl is physically pressed
+        Send "{Ctrl up}"
+    if GetKeyState("Shift", "P") ; Check if Shift is physically pressed
+        Send "{Shift up}"
+    return
+}
 
 kanataRunning := false
 ;SetTimer(CheckActiveWindow, 5000)  ; Runs the function every 500ms

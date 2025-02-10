@@ -13,3 +13,4 @@ vim.keymap.set({ "n", "v" }, "<RightMouse>", function()
 
   require("menu").open(options, { mouse = true })
 end, {})
+vim.keymap.set("i", "jk", "<Esc>")

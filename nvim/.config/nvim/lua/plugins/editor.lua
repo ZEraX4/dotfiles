@@ -49,14 +49,6 @@ return {
     end,
   },
   {
-    "akinsho/bufferline.nvim",
-    enabled = true,
-  },
-  {
-    "nvim-lualine/lualine.nvim",
-    enabled = true,
-  },
-  {
     "christoomey/vim-tmux-navigator",
     cmd = {
       "TmuxNavigateLeft",
@@ -92,19 +84,6 @@ return {
     enabled = not vim.g.neovide,
     config = function()
       require("neoscroll").setup({})
-    end,
-  },
-  {
-    "nvim-telescope/telescope-file-browser.nvim",
-    keys = {
-      {
-        "<leader>sB",
-        ":Telescope file_browser path=%:p:h=%:p:h<cr>",
-        desc = "Brows Files",
-      },
-    },
-    config = function()
-      require("telescope").load_extension("file_browser")
     end,
   },
 }

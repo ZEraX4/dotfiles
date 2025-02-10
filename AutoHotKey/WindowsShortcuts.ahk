@@ -3,7 +3,7 @@
 !b::Send "{Media_Prev}"
 ^+d::SendText(FormatTime(, "yyyyMMdd") 'v1Mosab')
 ^+.::Run "cmd /k `"cd c:\Mosab\Personal\Python\OutlookAttachments & python.exe outlook_attachments.py`""
-^+,::Run "cmd /k `"xcopy /D \\192.168.70.11\Users\Apex-server\Desktop\CardReaderF\Logs\*.txt C:\Mosab\Personal\Python\FingerprintsProcessing\fingerprints\`""
+^+,::Run "cmd /k `"robocopy \\192.168.70.11\Users\Apex-server\Desktop\CardReaderF\Logs\ C:\Mosab\Personal\Python\FingerprintsProcessing\fingerprints\ *.txt /E /XO /MAXAGE:5`""
 ^#!r::Reload
 ^!#e::Edit
 F12:: {
